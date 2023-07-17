@@ -1,0 +1,199 @@
+
+p{
+    margin:0;
+}
+
+@mixin flex($jc:space-between, $ai:center, $fd:column){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+.__leftChatSection{
+    
+   min-width:30%;
+
+.__headerSec{
+    // position: fixed;
+    // top:0;
+    // left:0;
+    // right:0
+    @include flex(space-between, center, column);
+    padding: 15px 0px 0px 10px;
+
+   
+    .__headerOptionsSec{
+        padding:0px 20px 0px 20px;
+        @include flex(space-between, center, row);
+        height: 80px;
+        width:100%; 
+      
+        .__headerOption{
+            width: 180px;
+            @include flex(space-between, center, row);
+        }
+        .__userProfile{
+            height:50px;
+            width:50px;
+        }
+        .__headerDropOption{
+           position: absolute;
+           top:65px;
+           left:-50px;
+           height:120px;
+           width:150px;
+           @include flex(space-between, center, column);
+           padding: 14px 0px 14px 0px;
+           
+           .__sec1, .__sec2{
+            text-align: center;
+            width:100%;
+            height:40px;
+            transition: all 0.2s;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(242, 242, 242);
+            }
+           }  
+        }
+    }
+
+    .__searchSec{
+        margin-top: 2%;
+        padding:0px 20px 0px 20px;
+        width:100%;
+        height:40%;
+        @include flex(center, center);
+        i{
+            height:40px;
+            width:40px;
+            background-color: rgb(235, 234, 234);
+            vertical-align:top;
+            text-align: center;
+            padding-top:10px;
+        }
+       }
+       
+    .__mainProfile{
+        min-width:30%;
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+}
+
+.__userListSec{
+    ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #ffffff; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(129, 129, 129); 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    .__userChatsList{
+        height:78px;
+        width: 100%;
+        border-radius: 0px;
+        transition: all 0.2s;
+
+        &:active{
+           background-color: rgb(242, 242, 242);
+           color:#8fd4d1;
+        }
+        .__chatLists{
+            @include flex(center, start, column);
+           font-size: 20px;
+
+           .__latestMessage, span{
+            font-size: 16px;
+            color:rgb(73, 73, 73);
+           }
+           
+        }
+    }
+
+  }
+.__searUserInput:focus{
+    outline: none;
+}
+   @media only screen and (max-width:768px){
+    
+   }
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width:100%; 
+}
+
+.__messages{
+    @include flex(flex-end, center, column);
+}
+
+.mychats{
+    display: inline-block;
+}
+
+.__recentNotification{
+    height:50px;
+    @include flex(center, center);
+    width:100%;
+    margin-bottom: 10px;
+    background-color:lightblue;
+    
+}
+
+.__rightChatSection{
+    @include flex(center, center, center);
+    width:100%;
+    overflow-y: hidden;
+    padding: 20px 15px 20px 15px;
+
+
+ 
+   
+}
+
+.__chatListSec{
+    //   height:616px;
+      
+    ::-webkit-scrollbar {
+        width: 80px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #b43737; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(215, 28, 28); 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(190, 34, 34); 
+      }
+      
+   }
+
+  //  .__textTyping{
+  //   // position: absolute;
+  //   top:-50;
+  // //  }

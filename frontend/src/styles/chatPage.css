@@ -1,0 +1,178 @@
+p {
+  margin: 0;
+}
+
+.__leftChatSection {
+  min-width: 30%;
+}
+.__leftChatSection .__headerSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0px 0px 10px;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec .__headerOption {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec .__userProfile {
+  height: 50px;
+  width: 50px;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec .__headerDropOption {
+  position: absolute;
+  top: 65px;
+  left: -50px;
+  height: 120px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 14px 0px 14px 0px;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec .__headerDropOption .__sec1, .__leftChatSection .__headerSec .__headerOptionsSec .__headerDropOption .__sec2 {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.__leftChatSection .__headerSec .__headerOptionsSec .__headerDropOption .__sec1:hover, .__leftChatSection .__headerSec .__headerOptionsSec .__headerDropOption .__sec2:hover {
+  background-color: rgb(242, 242, 242);
+}
+.__leftChatSection .__headerSec .__searchSec {
+  margin-top: 2%;
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.__leftChatSection .__headerSec .__searchSec i {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(235, 234, 234);
+  vertical-align: top;
+  text-align: center;
+  padding-top: 10px;
+}
+.__leftChatSection .__headerSec .__mainProfile {
+  min-width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.__leftChatSection .__userListSec {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.__leftChatSection .__userListSec ::-webkit-scrollbar {
+  width: 8px;
+}
+.__leftChatSection .__userListSec ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.__leftChatSection .__userListSec ::-webkit-scrollbar-thumb {
+  background: rgb(129, 129, 129);
+}
+.__leftChatSection .__userListSec ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.__leftChatSection .__userListSec .__userChatsList {
+  height: 78px;
+  width: 100%;
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+.__leftChatSection .__userListSec .__userChatsList:active {
+  background-color: rgb(242, 242, 242);
+  color: #8fd4d1;
+}
+.__leftChatSection .__userListSec .__userChatsList .__chatLists {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-size: 20px;
+}
+.__leftChatSection .__userListSec .__userChatsList .__chatLists .__latestMessage, .__leftChatSection .__userListSec .__userChatsList .__chatLists span {
+  font-size: 16px;
+  color: rgb(73, 73, 73);
+}
+.__leftChatSection .__searUserInput:focus {
+  outline: none;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 100%;
+}
+
+.__messages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mychats {
+  display: inline-block;
+}
+
+.__recentNotification {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: lightblue;
+}
+
+.__rightChatSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  width: 100%;
+  overflow-y: hidden;
+  padding: 20px 15px 20px 15px;
+}
+
+.__chatListSec {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.__chatListSec ::-webkit-scrollbar {
+  width: 80px;
+}
+.__chatListSec ::-webkit-scrollbar-track {
+  background: #b43737;
+}
+.__chatListSec ::-webkit-scrollbar-thumb {
+  background: rgb(215, 28, 28);
+}
+.__chatListSec ::-webkit-scrollbar-thumb:hover {
+  background: rgb(190, 34, 34);
+}/*# sourceMappingURL=chatPage.css.map */

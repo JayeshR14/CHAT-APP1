@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+$font : 20px;
+
+@mixin inputStyle(){
+  outline: none;
+  border:solid 2px rgba(216, 216, 216, 0.8);
+}
+
+@mixin flex($jc: center, $ai: center, $fd: column){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin hw($h, $w){
+    height: $h;
+    width: $w;
+}
+.__mainLogin{
+@include flex;
+font-family: 'Roboto', sans-serif;
+margin-top:30px;
+.__main{
+    
+    height:auto;
+    max-width:600px;
+    @include flex(space-between);
+
+    .__toggle{
+       @include hw(60px, 100%);
+       @include flex(space-between,center,row);
+
+      .__divR,.__divL{
+        height : 56px;
+        flex:1;
+        background-color: rgb(36, 170, 226);
+        @include flex;
+        color:rgb(248, 248, 248);
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+      }
+      .__divL{
+        border-top-left-radius: 12px;
+        border-bottom:solid 3px rgba(0,0,0,0.5);
+      }
+      .__divR{
+        border-top-right-radius: 12px;
+      }
+    }
+   
+   .__registerForm, .__loginForm{
+    position: relative;
+    max-width: 600px;
+    height : 500px;
+    @include flex(space-between);
+    padding: 25px 0px 25px 0px;  
+    button{
+        @include hw(56px, 400px);
+        border:solid 2px rgba(0,0,0,0.8);
+    }
+    .passLabel{
+        position:absolute;
+        top:200px;
+        left:335px;
+        color:rgb(151, 151, 151);
+    }
+    .CpassLabel{
+        position:absolute;
+        top:275px;
+        left:335px;
+        color:rgb(151, 151, 151);
+    }
+    .loginPassLabel{
+      position:absolute;
+      top:140px;
+      left:335px;
+      color:rgb(151, 151, 151);
+    }
+}
+   .__loginForm{
+    height:300px;
+   }
+}
+}
+
+input{
+    height:60px;
+    width:400px;  
+    padding:0px 0px 0px 18px; 
+    font-size:$font;
+    @include inputStyle();
+    &::placeholder{
+     color:rgb(195, 195, 195);
+     font-size: 19px;     
+    }
+ } 
